@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>অর্ডার মেনু</title>
+
+    <!-- Google Font (Bangla) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 40px;
+            font-family: "Hind Siliguri", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        div {
+            background: #e8f3eb;
+            border: 1px solid #d6e8db;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border: 1px solid #c7d2e2;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* বিজোড় আইটেম */
+        span:nth-child(odd) {
+            background: #5e8fd8;
+        }
+
+        /* জোড় আইটেম */
+        span:nth-child(even) {
+            background: #7a70d6;
+        }
+
+        /* শেষ আইটেম */
+        span:last-child {
+            margin-bottom: 0;
+        }
+
+        /* প্রথম আইটেম */
+        span:first-child {
+            border-color: #ffd66b;
+            border-width: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>অর্ডার মেনু</h1>
+
+    <div>
+        <span>☕ কফি</span>
+        <span>🍵 চা</span>
+
+        <!--<span>🍔 বার্গার</span>-->
+
+        <span>🥪 স্যান্ডউইচ</span>
+        <span>🍕 পিজ্জা</span>
+        <span>🍰 কেক</span>
+        <span>🥐 পেস্ট্রি</span>
+        <span>🍬 ক্যান্ডি</span>
+        <span>🧃 জুস</span>
+    </div>
+
+</body>
+
+</html>
