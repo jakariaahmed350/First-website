@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            max-width: 1080px;
+            margin: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border-radius:5px;
+            outline: 15px solid rgb(112, 141, 158);
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            border: 10px solid #f0f0f0; 
+        }
+        img:nth-child(3) 
+        { border: 2px dashed red;
+           
+        }
+        @media (max-width: 991px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 767px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 420px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
 
+    </style>
+</head>
+<body>
+    <header style="color: rgb(226, 43, 18);">Cats &amp; Chati</header>
+    <main>
+        <div class="gallery">
+        <img src="https://images.pexels.com/photos/13151300/pexels-photo-13151300.jpeg">
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/11938274/pexels-photo-11938274.jpeg">
+        </div>
+        <img src="https://images.pexels.com/photos/28824163/pexels-photo-28824163.jpeg">
+        <img src="https://images.pexels.com/photos/25477754/pexels-photo-25477754.jpeg">
+        <img src="https://images.pexels.com/photos/11116286/pexels-photo-11116286.jpeg">
+        <img src="https://images.pexels.com/photos/18184541/pexels-photo-18184541.jpeg">
+        <img src="https://images.pexels.com/photos/34674618/pexels-photo-34674618.jpeg">
+        <img src="https://images.pexels.com/photos/20748312/pexels-photo-20748312.jpeg">
+        <img src="https://images.pexels.com/photos/26044914/pexels-photo-26044914.jpeg">
+        <img src="https://images.pexels.com/photos/5958812/pexels-photo-5958812.jpeg">
+        <img src="https://images.pexels.com/photos/6034822/pexels-photo-6034822.jpeg">
+        <img src="https://images.pexels.com/photos/35912485/pexels-photo-35912485.jpeg">
+        </div>
+  </main>
+  <footer>&copy; Jakaria Ahmed </footer>
+</body>
+</html>
